@@ -49,8 +49,10 @@ public class NetGroupTests {
     public void Before(){
         if (browserName == "chrome"){
             Configuration.browser = "chrome";
+            Selenide.sleep(1000);
         } else if (browserName == "firefox"){
             Configuration.browser = "firefox";
+            Selenide.sleep(1000);
         } else {
             Configuration.browser = "edge";
             Selenide.sleep(5000);
